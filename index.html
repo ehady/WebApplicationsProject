@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js"></script>
+   <link rel="icon" type="image/x-icon" href="images/guitar.ico">
+    <title>Unusual Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Unusual Calculator</div>
+        <input type="text" id="arguments" class="textfield" style="font-size: small;" placeholder="Enter numbers separated by spaces">
+        <select id="operation" class="operation">
+          <option value="∑">∑ (Sum)</option>
+          <option value="∏">∏ (Product)</option>
+          <option value=">">> (Maximum)</option>
+          <option value="<">< (Minimum)</option>
+        </select>
+        <input type="text" id="result" class="result" readonly />
+        <button id="randomize-btn">Randomize</button>
+        <button id="launch-btn"onclick="calculate()">Launch</button>
+        <button id="save-btn" onclick="saveData()">Save Data</button>
+
+        
+        
+        <hr>
+        
+        <label class="color-label">Foreground Color:</label>
+        <input type="color" id="foreground-color" class="color-input" onchange="changeForeground()">
+        <label class="color-label">Background Color:</label>
+        <input type="color" id="background-color" class="color-input" onchange="changeBackground()">
+        
+        <img src="images/calc.png" alt="Image" class="image">
+    
+</body>
+</html>

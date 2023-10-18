@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e3bfe6, #b1e5ef);
+    color: #FFFFFF;
+    font-family: 'Courier New', monospace;
+  }
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px; /* Adjust the height as per your preference */
+    background: linear-gradient(to right, #f795e4, #ffffff);
+  }
+  .container {
+    margin: 20px;
+  }
+  
+  .header {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .textfield {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-style: italic;
+    width: 300px;
+  }
+  
+  .operation {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .result {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-style: italic;
+    width: 300px;
+    margin-top: 10px;
+    background-color: #afd0f1;
+    color: #FFFFFF;
+    padding: 5px;
+  }
+  
+  hr {
+    margin-top: 30px;
+  }
+  
+  .color-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .color-input {
+    width: 100px;
+  }
+  
+  .image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(180deg);
+  }
+  
